@@ -1,11 +1,19 @@
 export class Soldier {
-    constructor(health:number, strength:number) {
-        this.health= health;
-        this.strength = strength;
+    constructor(public health:number, public strength:number) {
+        this.health = health,
+        this.strength = strength
     }
+    
+    attack():number {
+        return this.strength;
+    }
+
+    receiveDamage(damage:number):any{
+        this.health = this.health-50;
+        return undefined;
+    }
+
 }; 
 
-const soldier1:Soldier = {
-    health: 300,
-    strength: 150
-};
+
+
