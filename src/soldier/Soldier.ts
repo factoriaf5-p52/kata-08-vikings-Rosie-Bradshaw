@@ -9,7 +9,7 @@ export class Soldier {
     }
 
     receiveDamage(damage:number):any{
-        this.health = this.health-50;
+        this.health = this.health-damage;
         return undefined;
     }
 
